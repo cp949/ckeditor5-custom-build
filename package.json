@@ -1,7 +1,7 @@
 {
   "name": "@cp949/ckeditor5-custom-build",
   "description": "A custom CKEditor5 custom build",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": true,
   "main": "./build/ckeditor.js",
   "repository": "https://github.com/cp949/ckeditor5-custom-build.git",
@@ -44,7 +44,7 @@
     "@ckeditor/ckeditor5-typing": "^32.0.0",
     "@ckeditor/ckeditor5-upload": "^32.0.0"
   },
-  "devDependencies": {   
+  "devDependencies": {
     "css-loader": "^5.2.7",
     "postcss": "^7.0.39",
     "postcss-loader": "^4.3.0",
