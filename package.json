@@ -1,11 +1,17 @@
 {
-  "name": "@ckeditor/ckeditor5-aimk-classic",
-  "author": "CKSource",
-  "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
+  "name": "@cp949/ckeditor5-custom-build",
+  "description": "A custom CKEditor 5",
   "version": "0.0.1",
-  "license": "SEE LICENSE IN LICENSE.md",
   "private": true,
   "main": "./build/ckeditor.js",
+  "repository": "https://github.com/cp949/ckeditor5-custom-build.git",
+  "author": "cp949 <cp949@naver.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/cp949/ckeditor5-custom-build.git",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dist": "yarn build && node scripts/dist-package.cjs"
+  },
   "devDependencies": {
     "@ckeditor/ckeditor5-alignment": "^32.0.0",
     "@ckeditor/ckeditor5-autoformat": "^32.0.0",
@@ -41,12 +47,11 @@
     "postcss": "^7.0.39",
     "postcss-loader": "^4.3.0",
     "raw-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.5",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.2.3",
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2"
-  },
-  "scripts": {
-    "build": "webpack --mode production"
   }
 }

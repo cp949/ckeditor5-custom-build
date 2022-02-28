@@ -1,0 +1,11 @@
+{
+  "name": "@cp949/ckeditor5-custom-build",
+  "description": "A custom CKEditor 5",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "https://github.com/cp949/ckeditor5-custom-build.git",
+  "author": "cp949 <cp949@naver.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/cp949/ckeditor5-custom-build.git",
+  "main": "./build/ckeditor.js"
+}
