@@ -1,5 +1,5 @@
 {
-  "name": "@aimk/ckeditor5",
+  "name": "@ckeditor/ckeditor5-aimk-classic",
   "author": "CKSource",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
   "version": "0.0.1",

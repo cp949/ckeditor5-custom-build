@@ -105,9 +105,9 @@ Editor.builtinPlugins = [
 	Subscript,
 	Superscript,
 	Table,
-	TableCaption,
-	TableCellProperties,
-	TableProperties,
+	// TableCaption,
+	// TableCellProperties,
+	// TableProperties,
 	TableToolbar,
 	TextTransformation,
 	// Title,
@@ -134,6 +134,7 @@ Editor.defaultConfig = {
 			'italic',
 			'underline',
 			'strikethrough',
+			'link',
 			'blockQuote',
 			'bulletedList',
 			'numberedList',
@@ -141,7 +142,6 @@ Editor.defaultConfig = {
 			'imageUpload',
 			'mediaEmbed',
 			'removeFormat',
-			'link',
 			'specialCharacters',
 			'|',
 			'sourceEditing',
@@ -169,8 +169,8 @@ Editor.defaultConfig = {
 			'tableColumn',
 			'tableRow',
 			'mergeTableCells',
-			'tableCellProperties',
-			'tableProperties'
+			// 'tableCellProperties',
+			// 'tableProperties'
 		]
 	}
 };
