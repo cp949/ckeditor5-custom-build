@@ -2,15 +2,11 @@ const shell = require('shelljs')
 const fs = require('fs')
 
 function updatePackageDistJson() {
-    const fromPkg = JSON.parse(fs.readFileSync('package.json'))
-    const toPkg = JSON.parse(fs.readFileSync('package-dist.json'))
+    const pkg = JSON.parse(fs.readFileSync('package.json'))
 
-    toPkg.version = fromPkg.version
-    toPkg.bugs = fromPkg.bugs
-    toPkg.homepage = fromPkg.homepage
-    toPkg.keywords = fromPkg.keywords
-    toPkg.description = fromPkg.description
-    fs.writeFileSync('package-dist.json', JSON.stringify(toPkg, null, 4))
+    delete pkg['scripts']
+    delete pkg['devDependencies']
+    fs.writeFileSync('dist/package.json', JSON.stringify(pkg, null, 4))
 }
 
 async function main() {
@@ -18,7 +14,6 @@ async function main() {
     shell.mkdir('dist')
     shell.cp('-rf', './build', 'dist/')
     updatePackageDistJson()
-    shell.cp('-rf', 'package-dist.json', 'dist/package.json')
     shell.cp('-rf', 'README.md', 'dist/')
 }
 

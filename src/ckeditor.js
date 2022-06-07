@@ -169,7 +169,8 @@ Editor.defaultConfig = {
 			'imageTextAlternative',
 			'imageStyle:inline',
 			'imageStyle:block',
-			'imageStyle:side'
+			'imageStyle:side',
+			'linkImage'
 		]
 	},
 	table: {
